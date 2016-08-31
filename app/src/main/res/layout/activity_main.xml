@@ -25,7 +25,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="false"
         android:layout_marginTop="10dp"
-        android:layout_alignBottom="@+id/button2" />
+        android:layout_alignBottom="@+id/button2"
+        android:onClick="clearLast" />
     <Button
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -36,7 +37,8 @@
         android:layout_alignParentTop="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/button"/>
+        android:layout_toRightOf="@+id/button"
+        android:onClick="clearText" />
     <Button
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -47,7 +49,8 @@
         android:layout_alignParentTop="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/button2"/>
+        android:layout_toRightOf="@+id/button2"
+        android:onClick="clearAll" />
     <Button
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -58,7 +61,8 @@
         android:layout_alignParentTop="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/button3"/>
+        android:layout_toRightOf="@+id/button3"
+        android:onClick="invertSignal" />
     <Button
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -69,7 +73,8 @@
         android:layout_alignParentTop="false"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/button4"/>
+        android:layout_toRightOf="@+id/button4"
+        android:onClick="squareRoot" />
     <Button
         android:layout_width="70dp"
         android:layout_height="70dp"
@@ -201,7 +206,8 @@
         android:layout_alignTop="@+id/buttonN0"
         android:layout_toLeftOf="@+id/button4"
         android:layout_toStartOf="@+id/button4"
-        android:allowUndo="false" />
+        android:allowUndo="false"
+        android:onClick="setText" />
     <Button
         android:layout_height="70dp"
         android:layout_width="70dp"
@@ -273,7 +279,9 @@
         android:allowUndo="false"
         android:layout_above="@+id/button7"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:nestedScrollingEnabled="false"
+        android:onClick="operation" />
 
     <Button
         android:layout_height="70dp"
@@ -285,6 +293,7 @@
         android:layout_above="@+id/button6"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        />
+        android:nestedScrollingEnabled="false"
+        android:onClick="oneAbove" />
 
 </RelativeLayout>
